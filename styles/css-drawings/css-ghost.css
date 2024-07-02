@@ -1,0 +1,130 @@
+@import url("../vars.css");
+
+:root {
+    --css-ghost-container-size: 280px;
+    --css-ghost-size: 100%;
+    --css-ghost-background-color: rgba(0, 0, 0, 0);
+    --css-ghost-color: rgb(31, 62, 190);
+    --css-ghost-eye-color: white;
+    --css-ghost-pupil-color: black;
+    --css-ghost-shadow-color: var(--color-medium);
+}
+
+.css-ghost-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: var(--css-ghost-container-size);
+    height: var(--css-ghost-container-size);
+}
+
+.css-ghost-container .ghost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--ghost-background-color);
+    width: var(--css-ghost-size);
+    height: var(--css-ghost-size);
+    animation-name: css-ghost;
+
+    filter: drop-shadow(0 0 10px var(--css-ghost-shadow-color));
+}
+
+.css-ghost-container .ghost .head {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 80%;
+    height: 40%;
+    border-radius: 50% 50% 0% 0% / 100% 100% 0% 0%;
+    background-color: var(--css-ghost-color);
+}
+
+.css-ghost-container .ghost .head .eyes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10%;
+    width: 65%;
+    height: 55%;
+}
+
+.css-ghost-container .ghost .head .eyes .eye {
+    position: relative;
+    height: 90%;
+    width: 40%;
+    border-radius: 50%;
+    background-color: var(--css-ghost-eye-color);
+}
+
+.css-ghost-container .ghost .head .eyes .eye .pupil {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    margin: 0 0;
+    width: 60%;
+    height: 65%;
+    border-radius: 50%;
+    background-color: var(--css-ghost-pupil-color);
+}
+
+.css-ghost-container .ghost .body {
+    width: 80%;
+    height: 30%;
+    background-color: var(--css-ghost-color);
+}
+
+.css-ghost-container .ghost .legs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 20%;
+}
+
+.css-ghost-container .ghost .legs .leg {
+    width: 25%;
+    height: 100%;
+    border-radius: 0% 49% 83% 17% / 25% 0% 75% 28%;
+    background-color: var(--css-ghost-color);
+}
+
+.css-ghost-container .ghost-shadow {
+    width: 90%;
+    height: 5%;
+    border-radius: 50%;
+    background-color: var(--css-ghost-shadow-color);
+    opacity: 0.6;
+    animation-name: css-shadow;
+}
+
+.css-ghost-container .ghost,
+.css-ghost-container .ghost-shadow {
+    position: relative;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes css-ghost {
+    0% {
+        bottom: 0px;
+    }
+
+    100% {
+        bottom: 20px;
+    }
+}
+
+@keyframes css-shadow {
+    0% {
+        scale: 1.0;
+    }
+
+    100% {
+        scale: 0.7;
+    }
+}

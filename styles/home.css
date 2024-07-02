@@ -1,16 +1,24 @@
 /* Games Carousel */
 .home-picture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 200px;
+    height: 400px;
+    margin-bottom: 20px;
+    /* background: blue; */
 }
 
 .home-picture-inner {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 80%;
 }
 
 .home-picture {
-    width: 70%;
+    max-height: 100%;
+    max-width: 90%;
     object-fit: contain;
+    box-shadow: 0 0 10px 10px var(--color-medium);
 }
