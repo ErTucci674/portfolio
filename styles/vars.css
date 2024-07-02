@@ -1,0 +1,19 @@
+:root {
+    /* Palette */
+    --color-dark: #050008;
+    --color-medium: #380424;
+    --color-light: white;
+
+    /* Page */
+    --body-color: var(--color-dark);
+    --text-color: var(--color-light);
+    --shadow-color: #58163d;
+
+    /* Navigation Bar */
+    --nav-color: var(--color-medium);
+    --nav-text-color: var(--color-light);
+
+    /* Footer */
+    --footer-color: var(--color-medium);
+    --footer-text-color: var(--color-light);
+}

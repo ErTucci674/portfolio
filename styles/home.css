@@ -1,0 +1,16 @@
+/* Games Carousel */
+.home-picture-container {
+    width: 100%;
+    height: 200px;
+}
+
+.home-picture-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-picture {
+    width: 70%;
+    object-fit: contain;
+}

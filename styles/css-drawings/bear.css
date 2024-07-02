@@ -1,0 +1,135 @@
+:root {
+    --bear-width: 400px;
+    --bear-height: var(--bear-width);
+    --bear-color: rgb(184, 120, 36);
+    --bear-ear-color: rgb(230, 146, 160);
+    --bear-eye-color: black;
+    --bear-mouth-area-color: pink;
+    --bear-nose-color: black;
+    --bear-mouth-color: black;
+}
+
+.bear-container {
+    position: relative;
+    width: var(--bear-width);
+    height: var(--bear-height);
+    background-color: lightblue;
+}
+
+.bear-head {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto auto;
+    width: 70%;
+    height: 65%;
+    border-radius: 50%;
+    background-color: var(--bear-color);
+}
+
+.bear-ears {
+    position: absolute;
+    width: 100%;
+    height: 30%
+}
+
+.bear-ear {
+    position: absolute;
+    top: 14%;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    background-color: var(--bear-color);
+}
+
+.bear-ear.left {
+    left: 13%;
+}
+
+.bear-ear.right {
+    right: 13%;
+}
+
+.bear-inner-ear {
+    position: absolute;
+    top: 18%;
+    width: 20%;
+    height: 18%;
+    border-radius: 50%;
+    background-color: var(--bear-ear-color);
+}
+
+.bear-inner-ear.left {
+    left: 18%;
+}
+
+.bear-inner-ear.right {
+    right: 18%;
+}
+
+.bear-eye {
+    position: absolute;
+    bottom: 43%;
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    background-color: var(--bear-eye-color);
+}
+
+.bear-eye.left {
+    left: 37%;
+}
+
+.bear-eye.right {
+    right: 37%;
+}
+
+.bear-mouth-area {
+    position: absolute;
+    bottom: 27%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 19%;
+    height: 17%;
+    border-radius: 50%;
+    background-color: var(--bear-mouth-area-color);
+}
+
+.bear-nose {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 36%;
+    margin: 0 auto;
+    width: 7%;
+    height: 5%;
+    border-radius: 50%;
+    background-color: var(--bear-nose-color);
+}
+
+.bear-mouth-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 32%;
+    margin: 0 auto;
+    width: 0.9%;
+    height: 5%;
+    background-color: var(--bear-mouth-color);
+}
+
+.bear-mouth {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30%;
+    margin: 0 auto;
+    display: flex;
+    width: 4%;
+    height: 3%;
+    border-radius: 50%;
+    background-color: var(--bear-mouth-color);
+}

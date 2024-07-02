@@ -1,0 +1,177 @@
+:root {
+    --berimbau-size: 400px;
+    --berimbau-background-color: rgb(184, 243, 168);
+    --berimbau-color: rgb(190, 108, 20);
+    --berimbau-arame-color: gray;
+    --berimbau-string-color: rgb(244, 255, 203);
+    --berimbau-cabaca-color: rgb(119, 83, 10);
+    --berimbau-cabaca-hole-color: rgb(51, 36, 5);
+    --caxixi-color: rgb(252, 248, 24);
+    --caxixi-lines-color: rgb(236, 236, 72);
+    --baqueta-color: rgb(134, 63, 34);
+    --pedra-color: rgb(139, 137, 137);
+}
+
+/* --- BERIMBAU --- */
+.berimbau-container {
+    position: relative;
+    width: var(--berimbau-size);
+    height: var(--berimbau-size);
+    background-color: var(--berimbau-background-color);
+    rotate: 0deg;
+}
+
+.berimbau {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.berimbau .stick,
+.berimbau .stick-adjust {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5%;
+    right: 0;
+    margin: auto;
+    width: 60%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: var(--berimbau-color);
+}
+
+.berimbau .stick-adjust {
+    width: 55%;
+    background-color: var(--berimbau-background-color)
+}
+
+.berimbau .stick-clip {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 24%;
+    right: 0;
+    margin: auto;
+    width: 41%;
+    height: 70%;
+    background-color: var(--berimbau-background-color);
+}
+
+.berimbau .arame {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 17%;
+    margin: auto;
+    height: 65%;
+    width: 0.4%;
+    background-color: var(--berimbau-arame-color);
+}
+
+.berimbau .string {
+    position: absolute;
+    bottom: 30%;
+    left: 28%;
+    rotate: -5deg;
+    width: 14%;
+    height: 0.4%;
+    background-color: var(--berimbau-string-color);
+}
+
+.berimbau .cabaca {
+    position: absolute;
+    left: 0;
+    right: 55%;
+    bottom: 20%;
+    margin: 0 auto;
+    width: 15%;
+    height: 14%;
+    border-radius: 50%;
+    background-color: var(--berimbau-cabaca-color);
+    rotate: -21deg;
+}
+
+.berimbau .cabaca .hole {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 60%;
+    margin: auto;
+    width: 29%;
+    height: 57%;
+    border-radius: 50%;
+    background-color: var(--berimbau-cabaca-hole-color);
+}
+
+/* CAXIXI */
+.caxixi {
+    position: absolute;
+    bottom: 25%;
+    right: 15%;
+    width: 25%;
+    height: 25%;
+}
+
+.caxixi .handle {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 23%;
+    height: 20%;
+    border-radius: 50% 50% 0% 0% / 100% 100% 0% 0%;
+    background-color: var(--caxixi-color);
+}
+
+.caxixi .handle .adjust {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 75%;
+    height: 70%;
+    border-radius: 50% 50% 0% 0% / 100% 100% 0% 0%;
+    background-color: var(--berimbau-background-color);
+}
+
+.caxixi .base {
+    position: absolute;
+    bottom: 22%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    border-radius: 35% 35% 10% 10% / 72% 72% 13% 13%;
+    background-image: repeating-linear-gradient(90deg, var(--caxixi-lines-color), var(--caxixi-color) 10%);
+}
+
+.baqueta {
+    position: absolute;
+    bottom: 28%;
+    right: 37%;
+    width: 1%;
+    height: 25%;
+    border-radius: 30% 0% 40% 0% / 50%;
+    rotate: 25deg;
+    background-color: var(--baqueta-color);
+}
+
+.pedra {
+    position: absolute;
+    right: 45%;
+    bottom: 40%;
+    width: 4%;
+    height: 5.5%;
+    border-radius: 68% 36% 52% 49% / 49% 54% 65% 41%;
+    rotate: -15deg;
+    background-color: var(--pedra-color);
+}
