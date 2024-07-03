@@ -1,13 +1,12 @@
-@import url("../vars.css");
-
 :root {
-    --css-ghost-container-size: 280px;
+    --css-ghost-container-size: 300px;
+    --css-ghost-container-size: 100%;
     --css-ghost-size: 100%;
     --css-ghost-background-color: rgba(0, 0, 0, 0);
     --css-ghost-color: rgb(31, 62, 190);
     --css-ghost-eye-color: white;
     --css-ghost-pupil-color: black;
-    --css-ghost-shadow-color: var(--color-medium);
+    --css-ghost-shadow-color: var(--shadow-color);
 }
 
 .css-ghost-container {
@@ -28,8 +27,6 @@
     width: var(--css-ghost-size);
     height: var(--css-ghost-size);
     animation-name: css-ghost;
-
-    filter: drop-shadow(0 0 10px var(--css-ghost-shadow-color));
 }
 
 .css-ghost-container .ghost .head {
@@ -96,7 +93,7 @@
     height: 5%;
     border-radius: 50%;
     background-color: var(--css-ghost-shadow-color);
-    opacity: 0.6;
+    opacity: 0.8;
     animation-name: css-shadow;
 }
 

@@ -5,6 +5,7 @@
     --color-light: white;
 
     /* Page */
+    --desktop-size: 600px;
     --body-color: var(--color-dark);
     --text-color: var(--color-light);
     --shadow-color: #58163d;
