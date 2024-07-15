@@ -1,0 +1,82 @@
+:root {
+    --css-menu-button-size: 50px;
+    --css-menu-button-borders-size: 5px;
+    --css-menu-button-color: white;
+    --css-menu-button-color: var(--color-medium);
+    --css-menu-button-lines-color: black;
+    --css-menu-button-lines-color: var(--shadow-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.css-menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    position: absolute;
+    width: var(--css-menu-button-size);
+    height: var(--css-menu-button-size);
+    border: var(--css-menu-button-borders-size) solid var(--css-menu-button-lines-color);
+    border-radius: 15%;
+    background: var(--css-menu-button-color);
+}
+
+.nav-checkbox {
+    position: absolute;
+    appearance: none;
+    z-index: 2;
+    width: var(--css-menu-button-size);
+    height: var(--css-menu-button-size);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.css-menu-button .lines {
+    position: absolute;
+    width: 65%;
+    height: 60%;
+}
+
+.css-menu-button .lines .line {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background: var(--css-menu-button-lines-color);
+    border-radius: 5% / 50%;
+    transition: all 250ms;
+}
+
+.css-menu-button .lines .line2 {
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    opacity: 1;
+}
+
+.css-menu-button .lines .line3 {
+    bottom: 0;
+}
+
+/* Checkbox Animation */
+.nav-checkbox:checked+.css-menu-button .lines .line1 {
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    rotate: 45deg;
+}
+
+.nav-checkbox:checked+.css-menu-button .lines .line2 {
+    opacity: 0;
+}
+
+.nav-checkbox:checked+.css-menu-button .lines .line3 {
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    rotate: -45deg;
+}
