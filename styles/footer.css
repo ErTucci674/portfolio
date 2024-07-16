@@ -4,13 +4,13 @@ footer {
     align-items: center;
     font-size: 60%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 3.125rem;
     background: var(--footer-color);
     color: var(--footer-text-color);
 }
 
 footer>* {
-    margin-top: 25px;
+    margin-top: 1.563rem;
 }
 
 .footer-table {
@@ -20,18 +20,18 @@ footer>* {
 }
 
 .footer-table tr {
-    height: 30px;
+    height: 1.875rem;
 }
 
 /* Select just the first 2 elements */
 .footer-table th:nth-child(-n + 2),
 .footer-table td:nth-child(-n + 2) {
     width: 33%;
-    border-right: 2px solid var(--shadow-color);
+    border-right: 0.125rem solid var(--shadow-color);
 }
 
 .footer-text {
-    margin-bottom: 25px;
+    margin-bottom: 1.563rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -40,6 +40,6 @@ footer>* {
     }
 
     footer:hover {
-        box-shadow: 0px -5px 10px var(--shadow-color);
+        box-shadow: 0px -0.313rem 0.625rem var(--shadow-color);
     }
 }

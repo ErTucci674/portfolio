@@ -22,7 +22,7 @@
 .nav-container nav ul li a {
     text-decoration-line: none;
     color: var(--nav-text-color);
-    font-size: 13px;
+    font-size: 0.813rem;
     font-weight: bold;
 }
 
@@ -41,12 +41,12 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        height: 60px;
+        height: 3.75rem;
         transition: all var(--nav-animation-time) ease;
     }
 
     .nav-container:hover nav {
-        box-shadow: 0 5px 8px var(--shadow-color);
+        box-shadow: 0 0.313rem 0.5rem var(--shadow-color);
     }
 
     .nav-container nav ul {
@@ -54,7 +54,7 @@
     }
 
     .nav-container nav ul li {
-        margin: 15px 30px;
+        margin: 0.938rem 1.875rem;
     }
 }
 
@@ -63,26 +63,26 @@
 
     .nav-checkbox,
     .css-menu-button {
-        margin: 10px;
+        margin: 0.625rem;
     }
 
     .nav-container nav {
         display: none;
         width: var(--css-menu-button-size);
         height: var(--css-menu-button-size);
-        border-top-right-radius: 30px;
-        filter: drop-shadow(10px 0px 5px var(--shadow-color));
+        border-top-right-radius: 1.875rem;
+        filter: drop-shadow(0.625rem 0px 0.313rem var(--shadow-color));
     }
 
     .nav-container nav ul {
         flex-direction: column;
         width: 100%;
         text-align: center;
-        margin-top: 40px;
+        margin-top: 2.5rem;
     }
 
     .nav-container nav ul li {
-        margin: 10px 0 15px 0;
+        margin: 0.625rem 0 0.938rem 0;
     }
 
     /* --- NAVIGATION CHECKBOX BUTTON --- */
@@ -102,7 +102,7 @@
     /* Checkbox Movement */
     .nav-checkbox:checked,
     .nav-checkbox:checked~.css-menu-button {
-        transform: translateX(calc(60vw - var(--css-menu-button-size) - 30px));
+        transform: translateX(calc(60vw - var(--css-menu-button-size) - 1.875rem));
     }
 
     .nav-checkbox:checked~.css-menu-button {
@@ -125,8 +125,8 @@
 
     @keyframes nav-ani {
         from {
-            width: 50px;
-            height: 50px;
+            width: 3.125rem;
+            height: 3.125rem;
             opacity: 0;
         }
 

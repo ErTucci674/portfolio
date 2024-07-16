@@ -10,9 +10,11 @@
     height: 300px;
     margin-top: 20px;
     border-radius: 50%;
-    background-image: url("../pictures/profile.jpg");
+    background-image: url("../pictures/profile.png");
     background-position: center;
-    filter: drop-shadow(0 0 20px var(--shadow-color))
+    background-size: cover;
+    filter: drop-shadow(0 0 5px var(--shadow-color));
+    box-shadow: 0 0 50px 0 var(--shadow-color);
 }
 
 .about-text {

@@ -1,9 +1,9 @@
 :root {
-    --picture-container-size: 400px;
+    --picture-container-size: 25rem;
 }
 
 .home-pictures-container {
-    padding: 15px 0;
+    padding: 0.938rem 0;
 }
 
 .home-picture-container {
@@ -12,8 +12,8 @@
     align-items: center;
     width: 100%;
     height: var(--picture-container-size);
-    padding: 0 5px;
-    margin-bottom: 10px;
+    padding: 0 0.313rem;
+    margin-bottom: 0.625rem;
 }
 
 .home-picture-inner {
@@ -28,8 +28,8 @@
     max-height: 100%;
     max-width: 90%;
     object-fit: contain;
-    box-shadow: 0 0 10px 10px var(--color-medium);
-    border-radius: 5px;
+    box-shadow: 0 0 0.625rem 0.625rem var(--color-medium);
+    border-radius: 0.313rem;
 }
 
 /* Desktops only */
@@ -39,7 +39,7 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 2.5rem;
     }
 
     .home-picture-container {
@@ -48,11 +48,11 @@
 }
 
 .css-container {
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 0.625rem;
 }
 
 .css-container>div {
-    filter: drop-shadow(0 0 30px var(--shadow-color));
+    filter: drop-shadow(0 0 1.875rem var(--shadow-color));
 }
