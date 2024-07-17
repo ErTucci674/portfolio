@@ -1,8 +1,13 @@
 :root {
     --picture-container-size: 25rem;
+
+    /* Genre Text Accent Colors */
+    --genre-2d-color: linear-gradient(to bottom, yellow, rgb(100, 100, 1));
+    --genre-web-color: linear-gradient(to bottom, cyan, rgb(0, 87, 87));
+    --genre-puzzle-color: linear-gradient(to bottom, white, rgb(48, 48, 48));
 }
 
-.home-pictures-container {
+.home-pictures {
     padding: 0.938rem 0;
 }
 
@@ -14,6 +19,8 @@
     height: var(--picture-container-size);
     padding: 0 0.313rem;
     margin-bottom: 0.625rem;
+    text-align: center;
+    font-size: 0.6rem;
 }
 
 .home-picture-inner {
@@ -22,6 +29,39 @@
     align-items: center;
     width: 100%;
     height: 80%;
+}
+
+.home-picture-container .genres {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 0.8rem;
+}
+
+.home-picture-container .genres li {
+    padding: 0.5rem;
+    border-radius: 0.9rem;
+}
+
+/* Genre Text Accents Colors */
+.genre-2d {
+    background: var(--genre-2d-color);
+}
+
+.genre-web {
+    background: var(--genre-web-color);
+}
+
+.genre-puzzle {
+    background: var(--genre-puzzle-color);
+}
+
+.home-picture-container .text {
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
 }
 
 .home-picture {
@@ -34,7 +74,7 @@
 
 /* Desktops only */
 @media screen and (min-width: 600px) {
-    .home-pictures-container {
+    .home-pictures {
         display: flex;
         justify-content: center;
         align-items: center;
