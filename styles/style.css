@@ -36,11 +36,12 @@ h1 {
 
 h2 {
     font-size: 1rem;
-    margin: 0 1.562 0.625rem 1.562;
+    margin: 0 1.56rem 1rem 0.5rem;
 }
 
 p {
     font-size: 0.625rem;
+    text-align: center;
     line-height: 1.25rem;
     margin: 1.875rem 3.125rem;
 }
@@ -56,6 +57,7 @@ p {
 @media screen and (min-width: 600px) {
     h2 {
         font-size: 1.25rem;
+        margin-left: 1.56rem;
     }
 
     .content {
