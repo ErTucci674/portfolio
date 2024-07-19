@@ -7,11 +7,6 @@
     --css-menu-button-lines-color: var(--shadow-color);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .css-menu-button {
     display: flex;
     justify-content: center;

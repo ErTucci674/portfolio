@@ -5,6 +5,14 @@
     --genre-2d-color: linear-gradient(to bottom, yellow, rgb(100, 100, 1));
     --genre-web-color: linear-gradient(to bottom, cyan, rgb(0, 87, 87));
     --genre-puzzle-color: linear-gradient(to bottom, white, rgb(48, 48, 48));
+    --genre-pixelart-color: linear-gradient(to bottom, orange, green);
+    --genre-shooter-color: linear-gradient(to bottom, orange, red);
+    --genre-unity-color: linear-gradient(to bottom, white, black 60%);
+    --genre-sidescroller-color: linear-gradient(to bottom, cyan, blue);
+    --genre-arcade-color: linear-gradient(to bottom, rgb(247, 62, 207), rgb(12, 4, 124));
+
+    /* Links */
+    --project-link-color: purple;
 }
 
 .home-pictures {
@@ -16,7 +24,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
     font-size: 0.6rem;
 }
 
@@ -25,6 +33,10 @@
     object-fit: contain;
     box-shadow: 0 0 0.625rem 0.625rem var(--color-medium);
     border-radius: 0.313rem;
+}
+
+.home-picture-text-container {
+    margin-top: 1rem;
 }
 
 .home-picture-text-container .genres {
@@ -55,9 +67,64 @@
     background: var(--genre-puzzle-color);
 }
 
+.genre-pixelart {
+    background: var(--genre-pixelart-color);
+}
+
+.genre-shooter {
+    background: var(--genre-shooter-color);
+}
+
+.genre-unity {
+    background: var(--genre-unity-color);
+}
+
+.genre-sidescroller {
+    background: var(--genre-sidescroller-color);
+}
+
+.genre-arcade {
+    background: var(--genre-arcade-color);
+}
+
 .home-picture-container .text {
     font-size: 0.6rem;
     margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.project-link {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.project-link:link,
+.project-link:visited {
+    color: var(--project-link-color);
+}
+
+.project-link.play {
+    display: none;
+    align-self: flex-end;
+    text-decoration: none;
+    width: 33%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 100vw;
+    background: var(--color-medium);
+    color: white;
+}
+
+.project-link.play.phone {
+    display: block;
+}
+
+/* Hide Private Link */
+.project-link.private,
+.project-link.none {
+    display: none;
 }
 
 /* Desktops only */
@@ -72,6 +139,11 @@
 
     .home-picture-container {
         width: 35%;
+        margin-bottom: 0;
+    }
+
+    .project-link.play.pc {
+        display: block;
     }
 }
 
