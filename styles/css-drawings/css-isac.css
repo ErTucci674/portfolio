@@ -1,7 +1,6 @@
 @import url("../vars.css");
 
 :root {
-    --css-isac-size: 300px;
     --css-isac-size: 100%;
     --css-isac-background-color: rgba(0, 0, 0, 0);
     --css-isac-color: rgb(255, 219, 225);

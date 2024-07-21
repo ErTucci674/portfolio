@@ -1,0 +1,72 @@
+:root {
+    --css-clock-size: 100%;
+    --css-clock-color: white;
+    --css-clock-thickness: 15px;
+}
+
+.css-clock,
+.css-clock .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.css-clock {
+    width: var(--css-clock-size);
+    height: var(--css-clock-size);
+}
+
+.css-clock .circle {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background-color: var(--css-clock-color);
+    border-radius: 50%;
+    border: var(--css-clock-thickness) solid black;
+}
+
+.css-clock .point {
+    width: var(--css-clock-thickness);
+    height: var(--css-clock-thickness);
+    border-radius: 50%;
+    background: black;
+}
+
+.css-clock .circle .line {
+    position: absolute;
+    right: 50%;
+    width: 50%;
+    height: 5%;
+    background: red;
+    border-radius: var(--css-clock-thickness);
+    transform-origin: 100% 50%;
+    rotate: 90deg;
+    animation: 60s linear css-clock-sec-ani infinite;
+}
+
+.css-clock .circle .line.sec {
+    height: 2%;
+}
+
+.css-clock .line.min {
+    width: 40%;
+    height: 4%;
+    background: gray;
+    animation: 3600s linear css-clock-sec-ani infinite;
+}
+
+.css-clock .line.hr {
+    width: 20%;
+    background: black;
+    animation: 216000s linear css-clock-sec-ani infinite;
+}
+
+@keyframes css-clock-sec-ani {
+    0% {
+        rotate: 90deg;
+    }
+
+    100% {
+        rotate: 450deg;
+    }
+}
