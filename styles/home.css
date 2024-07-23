@@ -13,6 +13,11 @@
 
     /* Links */
     --project-link-color: purple;
+    --project-link-hover-color: white;
+    --project-play-text-color: white;
+    --project-play-text-hover-color: var(--project-link-color);
+    --project-play-background-color: var(--color-medium);
+    --project-play-background-hover-color: white;
 }
 
 .home-pictures {
@@ -98,6 +103,7 @@
     width: 100%;
     margin: 1rem 0;
     text-align: center;
+    transition: all 250ms linear;
 }
 
 .project-link:link,
@@ -113,8 +119,8 @@
     margin: 0 auto;
     padding: 1rem;
     border-radius: 100vw;
-    background: var(--color-medium);
-    color: white;
+    background: var(--project-play-background-color);
+    color: var(--project-play-text-color);
 }
 
 .project-link.play.phone {
@@ -142,9 +148,22 @@
         margin-bottom: 0;
     }
 
+    .project-link:hover:not(.play) {
+        color: var(--project-link-hover-color);
+        font-size: 110%;
+    }
+
     .project-link.play.pc {
         display: block;
     }
+
+    .project-link.play:hover{
+        color: var(--project-play-text-hover-color);
+        background-color: var(--project-play-background-hover-color);
+        transform: scale(1.1);
+        filter: drop-shadow(0 0.0 1rem var(--shadow-color));
+    }
+
 }
 
 .css-container {
