@@ -1,6 +1,9 @@
 /* --- NAVIGATION BAR --- */
 
 :root {
+    --nav-color: var(--color-medium);
+    --nav-text-color: var(--color-light);
+    --nav-underline-color: white;
     --nav-animation-time: 500ms;
 }
 
@@ -20,6 +23,7 @@
 }
 
 .nav-container nav ul li a {
+    position: relative;
     text-decoration-line: none;
     color: var(--nav-text-color);
     font-size: 0.813rem;
@@ -55,6 +59,28 @@
 
     .nav-container nav ul li {
         margin: 0.938rem 1.875rem;
+    }
+
+    /* Selection Underlining */
+    .nav-container nav ul li a::after {
+        content: '';
+        position: absolute;
+        bottom: -0.6rem;
+        left: 50%;
+        width: 0%;
+        height: 10%;
+        background-image: linear-gradient(to right, var(--color-medium), var(--nav-underline-color), var(--color-medium));
+        transition: all 250ms linear;
+    }
+    
+    .nav-container nav ul li a:hover::after {
+        width: 100%;
+        left: 0%;
+    }
+
+    .nav-container nav ul li a.active::after {
+        width: 100%;
+        left: 0%;
     }
 }
 

@@ -11,8 +11,8 @@
     --shadow-color: #58163d;
 
     /* Navigation Bar */
-    --nav-color: var(--color-medium);
-    --nav-text-color: var(--color-light);
+    /* --nav-color: var(--color-medium);
+    --nav-text-color: var(--color-light); */
 
     /* Footer */
     --footer-color: var(--color-medium);
