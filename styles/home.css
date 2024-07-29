@@ -34,6 +34,7 @@
 }
 
 .home-picture {
+    position: relative;
     max-width: 90%;
     object-fit: contain;
     box-shadow: 0 0 0.625rem 0.625rem var(--color-medium);
@@ -146,6 +147,15 @@
     .home-picture-container {
         width: 35%;
         margin-bottom: 0;
+    }
+
+    /* TODO: From picture to gif */
+    .home-picture {
+        transition: all 250ms linear;
+    }
+
+    .home-picture:hover {
+        transform: scale(1.1);
     }
 
     .project-link:hover:not(.play) {

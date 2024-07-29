@@ -19,6 +19,10 @@ footer>* {
     vertical-align: center;
 }
 
+.footer-table th {
+    font-size: 0.75rem;
+}
+
 .footer-table tr {
     height: 1.875rem;
 }
@@ -32,6 +36,11 @@ footer>* {
 
 .footer-text {
     margin-bottom: 1.563rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--light-color);
 }
 
 @media screen and (min-width: 600px) {
