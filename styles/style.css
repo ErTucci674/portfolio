@@ -53,6 +53,11 @@ p {
     background-image: linear-gradient(to right, var(--color-dark), var(--color-medium) 10%, var(--color-dark));
 }
 
+hr {
+    width: 80%;
+    border: 1px solid var(--shadow-color);
+}
+
 /* Desktops only */
 @media screen and (min-width: 600px) {
     h2 {
