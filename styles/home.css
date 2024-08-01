@@ -141,7 +141,8 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 3rem;
+        gap: 7rem;
+        row-gap: 2rem;
     }
 
     .home-picture-container {
@@ -184,4 +185,8 @@
 
 .css-container>div {
     filter: drop-shadow(0 0 1.875rem var(--shadow-color));
+}
+
+.css-text {
+    font-size: 0.8rem;
 }

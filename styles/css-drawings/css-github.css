@@ -1,0 +1,83 @@
+:root{
+    --css-github-size: 100%;
+    --css-github-color: white;
+    --css-github-cat-color: var(--body-color);
+}
+
+.css-github {
+    position: relative;
+    width: var(--css-github-size);
+    height: var(--css-github-size);
+    background-color: var(--css-github-color);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.css-github > * {
+    position: absolute;
+    background-color: var(--css-github-cat-color);
+}
+
+.css-github .head {
+    width: 60%;
+    height: 45%;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 45%;
+}
+
+.css-github .head .ear {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    background-color: var(--css-github-cat-color);
+    border-radius: 20% 100% 0% 100% / 0% 30% 0% 100%;
+}
+
+.css-github .head .ear.left {
+    left: 3%;
+    rotate: 15deg;
+}
+
+.css-github .head .ear.right {
+    right: 3%;
+    transform: scaleX(-1);
+    rotate: -15deg;
+}
+
+.css-github .body {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 33%;
+    height: 40%;
+    border-radius: 50% 50% 0 0;
+}
+
+.css-github .body .tail {
+    position: absolute;
+    bottom: 50%;
+    left: -20%;
+    width: 25%;
+    height: 20%;
+    border-radius: 0 0 0 100vw;
+    box-shadow: -5px 5px 0 3px var(--css-github-cat-color);
+}
+
+.css-github .body .tail.tip {
+    transform: scale(-1) translate(131%, 50%);
+}
+
+.css-github .body .tail.tip::after {
+    content: '';
+    position: absolute;
+    bottom: -34%;
+    right: 0;
+    background: var(--css-github-cat-color);
+    width: 40%;
+    height: 33%;
+    border-radius: 100vw;
+}

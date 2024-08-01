@@ -1,0 +1,61 @@
+:root{
+    --css-pixilart-size: 100%;
+    --css-pixilart-cols: 7;
+    --css-pixilart-rows: 6;
+    --css-pixilart-pixel-size: calc(var(--css-pixilart-size) / var(--css-pixilart-cols));
+    --css-pixilart-pixel-color: red;
+}
+
+.css-pixilart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--css-pixilart-size);
+    height: var(--css-pixilart-size);
+    border-radius: 50%;
+    background-color: white;
+}
+
+.css-pixilart .pixels {
+    margin-top: var(--css-pixilart-pixel-size);
+    width: calc(var(--css-pixilart-pixel-size) * var(--css-pixilart-cols) * 0.8);
+    height: calc(var(--css-pixilart-pixel-size) * var(--css-pixilart-cols) * 0.8);
+    width: 80%;
+    height: 80%;
+}
+
+.css-pixilart .pixels .pixel {
+    width: var(--css-pixilart-pixel-size);
+    height: var(--css-pixilart-pixel-size);
+    float: left;
+}
+
+.css-pixilart .pixels .pixel:nth-child(2),
+.css-pixilart .pixels .pixel:nth-child(3),
+.css-pixilart .pixels .pixel:nth-child(5),
+.css-pixilart .pixels .pixel:nth-child(6),
+.css-pixilart .pixels .pixel:nth-child(8),
+.css-pixilart .pixels .pixel:nth-child(9),
+.css-pixilart .pixels .pixel:nth-child(10),
+.css-pixilart .pixels .pixel:nth-child(11),
+.css-pixilart .pixels .pixel:nth-child(12),
+.css-pixilart .pixels .pixel:nth-child(13),
+.css-pixilart .pixels .pixel:nth-child(14),
+.css-pixilart .pixels .pixel:nth-child(15),
+.css-pixilart .pixels .pixel:nth-child(16),
+.css-pixilart .pixels .pixel:nth-child(17),
+.css-pixilart .pixels .pixel:nth-child(18),
+.css-pixilart .pixels .pixel:nth-child(19),
+.css-pixilart .pixels .pixel:nth-child(20),
+.css-pixilart .pixels .pixel:nth-child(21),
+.css-pixilart .pixels .pixel:nth-child(23),
+.css-pixilart .pixels .pixel:nth-child(24),
+.css-pixilart .pixels .pixel:nth-child(25),
+.css-pixilart .pixels .pixel:nth-child(26),
+.css-pixilart .pixels .pixel:nth-child(27),
+.css-pixilart .pixels .pixel:nth-child(31),
+.css-pixilart .pixels .pixel:nth-child(32),
+.css-pixilart .pixels .pixel:nth-child(33),
+.css-pixilart .pixels .pixel:nth-child(39){
+    background-color: var(--css-pixilart-pixel-color);
+}

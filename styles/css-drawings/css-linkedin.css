@@ -1,0 +1,23 @@
+:root{
+    --css-linkedin-size: 100%;
+    --css-linkedin-color: rgb(10, 102, 194);
+    --css-linkedin-text-size: 20rem;
+    --css-linkedin-text-color: white;
+}
+
+.css-linkedin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--css-linkedin-size);
+    height: var(--css-linkedin-size);
+    background-color: var(--css-linkedin-color);
+    border-radius: 10%;
+}
+
+.css-linkedin .text {
+    font-size: 18rem;
+    font-weight: bold;
+    color: var(--css-linkedin-text-color);
+    font-family: 'Source Sans';
+}
