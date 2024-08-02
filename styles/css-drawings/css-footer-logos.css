@@ -1,0 +1,28 @@
+/* THE LOGOS HERE ARE ADJUSTED FOR THE FOOTER PAGE */
+
+/* GitHub */
+.footer-logo .css-github {
+    --css-github-color: var(--footer-text-color);
+    --css-github-cat-color: var(--footer-color);
+}
+
+.footer-logo .css-github .body .tail {
+    box-shadow: -1px 1px 0 0.6px var(--css-github-cat-color);
+}
+
+/* LinkedIn */
+.footer-logo .css-linkedin {
+    --css-linkedin-color: var(--footer-text-color);
+    --css-linkedin-text-color: var(--footer-color);
+    border-radius: 50%;
+}
+
+.footer-logo .css-linkedin .text {
+    font-size: 1.9rem;
+}
+
+/* Pixilart */
+.footer-logo .css-pixilart .pixels > .pixel{
+    --css-pixilart-color: var(--footer-text-color);
+    --css-pixilart-pixel-color: var(--footer-color);
+}
