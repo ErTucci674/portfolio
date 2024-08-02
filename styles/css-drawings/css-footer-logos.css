@@ -22,7 +22,24 @@
 }
 
 /* Pixilart */
-.footer-logo .css-pixilart .pixels > .pixel{
+.footer-logo .css-pixilart{
     --css-pixilart-color: var(--footer-text-color);
     --css-pixilart-pixel-color: var(--footer-color);
+}
+
+@media screen and (min-width:600px) {
+    .footer-logo .css-github:hover {
+        --css-github-color: var(--body-color);
+        --css-github-cat-color: var(--footer-text-color);
+    }
+
+    .footer-logo .css-linkedin:hover {
+        --css-linkedin-color: var(--body-color);
+        --css-linkedin-text-color: var(--footer-text-color);
+    }
+
+    .footer-logo .css-pixilart:hover{
+        --css-pixilart-color: var(--body-color);
+        --css-pixilart-pixel-color: var(--footer-text-color);
+    }
 }

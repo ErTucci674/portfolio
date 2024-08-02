@@ -35,7 +35,7 @@
 
 .home-picture {
     position: relative;
-    max-width: 90%;
+    max-width: 80%;
     object-fit: contain;
     box-shadow: 0 0 0.625rem 0.625rem var(--color-medium);
     border-radius: 0.313rem;
@@ -152,6 +152,7 @@
 
     /* TODO: From picture to gif */
     .home-picture {
+        max-width: 90%;
         transition: all 250ms linear;
     }
 
@@ -178,8 +179,8 @@
 }
 
 .css-container {
-    width: 18.75rem;
-    height: 18.75rem;
+    width: 18rem;
+    height: 18rem;
     border-radius: 0.625rem;
 }
 
