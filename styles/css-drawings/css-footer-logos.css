@@ -27,19 +27,37 @@
     --css-pixilart-pixel-color: var(--footer-color);
 }
 
+/* Itch.io */
+.footer-logo .css-itchio {
+    --css-itchio-color: var(--footer-text-color);
+    --css-itchio-wall-color: var(--footer-color);
+    --css-itchio-controller-color: var(--css-itchio-color);
+    border-radius: 100vw;
+}
+
 @media screen and (min-width:600px) {
+    /* GitHub */
     .footer-logo .css-github:hover {
         --css-github-color: var(--body-color);
         --css-github-cat-color: var(--footer-text-color);
     }
 
+    /* LinkedIn */
     .footer-logo .css-linkedin:hover {
         --css-linkedin-color: var(--body-color);
         --css-linkedin-text-color: var(--footer-text-color);
     }
 
+    /* Pixilart */
     .footer-logo .css-pixilart:hover{
         --css-pixilart-color: var(--body-color);
         --css-pixilart-pixel-color: var(--footer-text-color);
+    }
+
+    /* Itch.io */
+    .footer-logo .css-itchio:hover {
+        --css-itchio-color: var(--body-color);
+        --css-itchio-wall-color: var(--footer-text-color);
+        --css-itchio-controller-color: var(--css-itchio-color);
     }
 }
