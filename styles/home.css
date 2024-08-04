@@ -42,7 +42,12 @@
 }
 
 .home-picture-text-container {
+    text-align: center;
     margin-top: 1rem;
+}
+
+.home-picture-text-container .game-title {
+    margin: 1rem 0;
 }
 
 .home-picture-text-container .genres {
