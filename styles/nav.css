@@ -4,7 +4,10 @@
     --nav-color: var(--color-medium);
     --nav-text-color: var(--color-light);
     --nav-underline-color: white;
+    --nav-underline-active-color: white;
+    --nav-underline-active-color: var(--shadow-color);
     --nav-animation-time: 500ms;
+    --nav-text-animation-time: 250ms;
 }
 
 .nav-container {
@@ -17,6 +20,22 @@ nav.main {
     background-color: var(--nav-color);
 }
 
+nav.main li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+nav.main .extended {
+    display: none;
+    gap: 1.4rem;
+}
+
+nav.main .extended a {
+    scale: 0.8;
+}
+
 .nav-container ul {
     display: flex;
     list-style: none;
@@ -26,7 +45,7 @@ nav.main {
     position: relative;
     text-decoration-line: none;
     color: var(--nav-text-color);
-    font-size: 0.813rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -44,14 +63,19 @@ nav.main {
     nav.main {
         display: flex;
         justify-content: flex-end;
-        margin-right: 1rem;
         align-items: center;
-        height: 3.75rem;
+        padding: 0.5rem 1rem;
         transition: all var(--nav-animation-time) ease;
     }
 
     .nav-container:hover nav.main {
-        box-shadow: 0 0.313rem 0.5rem var(--shadow-color);
+        box-shadow: 0 0.3rem 0.5rem var(--shadow-color);
+    }
+
+    .nav-container:hover .extended {
+        display: grid;
+        justify-items: center;
+        transition: all var(--nav-animation-time) ease;
     }
 
     nav.main ul {
@@ -59,7 +83,8 @@ nav.main {
     }
 
     nav.main li {
-        margin: 0.938rem 1.875rem;
+        margin: 1rem 1.5rem;
+        min-width: 9rem;    /* Needed as the list below shifts everything to the left*/
     }
 
     /* Selection Underlining */
@@ -69,9 +94,9 @@ nav.main {
         bottom: -0.6rem;
         left: 50%;
         width: 0%;
-        height: 10%;
+        height: 15%;
         background-image: linear-gradient(to right, var(--color-medium), var(--nav-underline-color), var(--color-medium));
-        transition: all 250ms linear;
+        transition: all var(--nav-text-animation-time) linear;
     }
     
     nav.main a:hover::after {
@@ -82,6 +107,7 @@ nav.main {
     nav.main a.active::after {
         width: 100%;
         left: 0%;
+        background-image: linear-gradient(to right, var(--color-medium), var(--nav-underline-active-color), var(--color-medium));
     }
 }
 
@@ -103,6 +129,7 @@ nav.main {
 
     nav.main ul {
         flex-direction: column;
+        gap: 2rem;
         width: 100%;
         text-align: center;
         margin-top: 2.5rem;
@@ -110,6 +137,11 @@ nav.main {
 
     nav.main li {
         margin: 0.625rem 0 0.938rem 0;
+    }
+
+    nav.main .extended {
+        display: grid;
+        justify-items: center;
     }
 
     /* --- NAVIGATION CHECKBOX BUTTON --- */
@@ -147,13 +179,13 @@ nav.main {
     /* Nav Side Bar Movement */
     .nav-checkbox:checked~nav {
         display: flex;
-        animation: 500ms linear nav-ani forwards;
+        animation: var(--nav-animation-time) linear nav-ani forwards;
     }
 
     @keyframes nav-ani {
         from {
-            width: 3.125rem;
-            height: 3.125rem;
+            width: var(--css-menu-button-size);
+            height: var(--css-menu-button-size);
             opacity: 0;
         }
 
