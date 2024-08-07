@@ -1,10 +1,8 @@
-body {
-    max-height: 90svw;
-}
-
 .content {
     display: grid;
-    justify-items: center;
+    justify-items: start;
+    align-items: center;
+    text-align: center;
 }
 
 .about-picture-container {
@@ -19,14 +17,21 @@ body {
 }
 
 .about-text {
-    text-align: center;
     margin-bottom: 0;
+}
+
+@media screen and (width < 600px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 
 @media  screen and (min-width:600px) {
     .content {
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        margin: 0 1rem;
+        margin: 0 2rem;
     }
 }

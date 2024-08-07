@@ -137,6 +137,10 @@ nav.main .extended a {
 
     nav.main li {
         margin: 0.625rem 0 0.938rem 0;
+        
+        /* TODO: Adjust/Remove */
+        padding-top: 1rem;
+        border-top: 2px dotted var(--shadow-color);
     }
 
     nav.main .extended {
@@ -180,6 +184,13 @@ nav.main .extended a {
     .nav-checkbox:checked~nav {
         display: flex;
         animation: var(--nav-animation-time) linear nav-ani forwards;
+    }
+
+    .fading-bar-nav {
+        width: 50%;
+        padding: 1.25rem 0.9rem;
+        border-radius: 1rem;
+        background-image: linear-gradient(to right, var(--color-medium) 10%, var(--color-dark));
     }
 
     @keyframes nav-ani {
