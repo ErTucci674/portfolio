@@ -45,7 +45,7 @@ nav.main .extended a {
     position: relative;
     text-decoration-line: none;
     color: var(--nav-text-color);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
 }
 
@@ -84,7 +84,8 @@ nav.main .extended a {
 
     nav.main li {
         margin: 1rem 1.5rem;
-        min-width: 9rem;    /* Needed as the list below shifts everything to the left*/
+        min-width: 9rem;
+        /* Needed as the list below shifts everything to the left*/
     }
 
     /* Selection Underlining */
@@ -98,7 +99,7 @@ nav.main .extended a {
         background-image: linear-gradient(to right, var(--color-medium), var(--nav-underline-color), var(--color-medium));
         transition: all var(--nav-text-animation-time) linear;
     }
-    
+
     nav.main a:hover::after {
         width: 100%;
         left: 0%;
@@ -137,7 +138,7 @@ nav.main .extended a {
 
     nav.main li {
         margin: 0.625rem 0 0.938rem 0;
-        
+
         /* TODO: Adjust/Remove */
         padding-top: 1rem;
         border-top: 2px dotted var(--shadow-color);
