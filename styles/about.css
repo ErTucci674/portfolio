@@ -1,8 +1,19 @@
-.content {
-    display: grid;
-    justify-items: start;
-    align-items: center;
+h2 {
+    margin: 0 0 2rem 0;
     text-align: center;
+}
+
+.content {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.about-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    background-image: linear-gradient(to bottom, var(--shadow-color), var(--body-color))
 }
 
 .about-picture-container {
@@ -20,8 +31,48 @@
     margin-bottom: 0;
 }
 
+.education-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.education-grid>.col {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 0;
+    overflow: hidden;
+}
+
+.education-grid>.col .back {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    border-radius: 100% 100% 100% 100% / 0% 100% 100% 100%;
+    box-shadow: 0 0 5px 1px var(--shadow-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    scale: 2;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.education-grid>.col .text {
+    margin: 0;
+}
+
 @media screen and (width < 600px) {
     .content {
+        margin-top: 0;
+    }
+
+    .about-container {
         display: flex;
         flex-direction: column;
         gap: 2rem;
@@ -29,10 +80,13 @@
 }
 
 @media screen and (min-width:600px) {
-    .content {
+    .about-container {
         grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-items: center;
-        margin: 0 1rem;
+    }
+
+    .education-grid {
+        grid-template-columns: repeat(3, 2fr);
     }
 }

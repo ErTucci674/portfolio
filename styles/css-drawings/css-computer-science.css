@@ -1,10 +1,9 @@
 :root {
     --css-computer-science-size: 100%;
-    --css-computer-science-screen-color: white;
     --css-computer-science-screen-color: var(--body-color);
-    --css-computer-science-device-color: black;
     --css-computer-science-device-color: var(--color-light);
     --css-computer-science-border-thickness: 8px;
+    --css-computer-science-border-radius: 2rem;
     --css-computer-science-border-color: var(--css-computer-science-device-color);
 }
 
@@ -22,7 +21,7 @@
     height: 65%;
     background-color: var(--css-computer-science-screen-color);
     border: var(--css-computer-science-border-thickness) solid var(--css-computer-science-border-color);
-    border-radius: 2rem;
+    border-radius: var(--css-computer-science-border-radius);
     overflow: hidden;
 }
 

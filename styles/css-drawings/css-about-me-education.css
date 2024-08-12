@@ -1,0 +1,31 @@
+/* THE DRAWINGS HERE ARE ADJUSTED FOR THE ABOUT PAGE */
+
+:root {
+    --css-about-me-drawings-size: 80%;
+    --css-about-me-drawings-main-color: var(--shadow-color);
+}
+
+/* Controller */
+.css-controller {
+    --css-controller-size: var(--css-about-me-drawings-size);
+    --css-controller-color: var(--css-about-me-drawings-main-color);
+}
+
+.css-controller .center:after {
+    box-shadow: 0 -6px 0 1px var(--css-controller-color);
+}
+
+/* Engineering */
+.css-computer-science {
+    --css-computer-science-size: var(--css-about-me-drawings-size);
+    --css-computer-science-device-color: var(--css-about-me-drawings-main-color);
+    --css-computer-science-border-color: var(--css-computer-science-device-color);
+    --css-computer-science-border-thickness: 1px;
+    --css-computer-science-border-radius: 5px;
+}
+
+/* Engineering */
+.css-engineering {
+    --css-engineering-size: var(--css-about-me-drawings-size);
+    --css-engineering-gear-color: var(--css-about-me-drawings-main-color);
+}

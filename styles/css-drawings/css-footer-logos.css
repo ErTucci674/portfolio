@@ -1,4 +1,4 @@
-/* THE LOGOS HERE ARE ADJUSTED FOR THE FOOTER PAGE */
+/* THE LOGOS HERE ARE ADJUSTED FOR THE FOOTER SECTION */
 
 /* GitHub */
 .footer-logo .css-github {
@@ -22,7 +22,7 @@
 }
 
 /* Pixilart */
-.footer-logo .css-pixilart{
+.footer-logo .css-pixilart {
     --css-pixilart-color: var(--footer-text-color);
     --css-pixilart-pixel-color: var(--footer-color);
 }
@@ -36,6 +36,7 @@
 }
 
 @media screen and (min-width:600px) {
+
     /* GitHub */
     .footer-logo .css-github:hover {
         --css-github-color: var(--body-color);
@@ -49,7 +50,7 @@
     }
 
     /* Pixilart */
-    .footer-logo .css-pixilart:hover{
+    .footer-logo .css-pixilart:hover {
         --css-pixilart-color: var(--body-color);
         --css-pixilart-pixel-color: var(--footer-text-color);
     }

@@ -6,7 +6,7 @@
     --nav-underline-color: white;
     --nav-underline-active-color: white;
     --nav-underline-active-color: var(--shadow-color);
-    --nav-animation-time: 500ms;
+    --nav-animation-time: 300ms;
     --nav-text-animation-time: 250ms;
 }
 
@@ -138,10 +138,6 @@ nav.main .extended a {
 
     nav.main li {
         margin: 0.625rem 0 0.938rem 0;
-
-        /* TODO: Adjust/Remove */
-        padding-top: 1rem;
-        border-top: 2px dotted var(--shadow-color);
     }
 
     nav.main .extended {

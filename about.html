@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/css-drawings/css-menu-button.css">
     <link rel="stylesheet" href="styles/css-drawings/css-drawings.css">
+    <link rel="stylesheet" href="styles/css-drawings/css-about-me-education.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/about.css">
@@ -37,6 +38,10 @@
                 </li>
                 <li>
                     <a class="active fading-bar-nav" href="about.html">ABOUT ME</a>
+                    <div class="extended">
+                        <a href="about.html#about-overview">Overview</a>
+                        <a href="about.html#about-education">Education</a>
+                    </div>
                 </li>
             </ul>
         </nav>
@@ -44,23 +49,137 @@
 
     <!-- PAGE CONTENT -->
     <div class="content">
-        <div class="about-picture-container"></div>
-        <div class="about-text-container">
-            <p class="about-text">
-                I am passionate about creating innovative games that are accessible to all and make a positive impact to
-                people's lives. I am adept at C#,
-                C++, Python and JavaScript having taught myself through working on my own projects in the Unity Editor
-                and in
-                other libraries in which I created my own physics engines.
-            </p>
-            <p class="about-text">
-                During the process of adapting games on the web, I developed skills in JavaScript but even more, CSS. I
-                dedicated time to
-                draw and recreate famous logos and characters in CSS (just like all of the logos and drawings you might
-                have seen in the
-                navigation bar and footer).
-            </p>
-        </div>
+        <section class="about-container" id="about-overview">
+            <div class="about-picture-container"></div>
+            <div class="about-text-container">
+                <p class="about-text">
+                    I am passionate about creating innovative games that are accessible to all and make a positive
+                    impact to
+                    people's lives. I am adept at C#,
+                    C++, Python and JavaScript having taught myself through working on my own projects in the Unity
+                    Editor
+                    and in
+                    other libraries in which I created my own physics engines.
+                </p>
+                <p class="about-text">
+                    During the process of adapting games on the web, I developed skills in JavaScript but even more,
+                    CSS. I
+                    dedicated time to
+                    draw and recreate famous logos and characters in CSS (just like all of the logos and drawings you
+                    might
+                    have seen in the
+                    navigation bar and footer).
+                </p>
+            </div>
+        </section>
+        <section class="education-container" id="about-education">
+            <h2 id="about-education">Education</h2>
+            <div class="education-grid">
+                <div class="col">
+                    <div class="back">
+                        <div class="css-controller">
+                            <div class="handle left"></div>
+                            <div class="handle right"></div>
+                            <div class="center"></div>
+                            <div class="controls">
+                                <div class="control pad"></div>
+                                <div class="control buttons">
+                                    <div class="col">
+                                        <div class="button left"></div>
+                                        <div class="button right"></div>
+                                    </div>
+                                    <div class="col vertical">
+                                        <div class="button left"></div>
+                                        <div class="button right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="title">Games<br>Development</h3>
+                    <p class="text">
+                        Iungo Solutions<br>
+                        Mar 2024 - Jul 2024
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="title">Computer<br>Science</h3>
+                    <div class="back">
+                        <div class="css-computer-science">
+                            <div class="screen">
+                                <div class="top">
+                                    <div class="atom">
+                                        <div class="center"></div>
+                                        <div class="layer"></div>
+                                        <div class="layer"></div>
+                                        <div class="layer"></div>
+                                    </div>
+                                </div>
+                                <div class="bottom"></div>
+                            </div>
+                            <div class="base">
+                                <div class="top"></div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text">
+                        Harvard Online - CS50<br>
+                        Jul 2023 - Dec 2023
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="title">BEng<br>Electronics</h3>
+                    <div class="back">
+                        <div class="css-engineering">
+                            <div class="gear-container large">
+                                <div class="gear">
+                                    <div class="center"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                </div>
+                            </div>
+                            <div class="gear-container medium">
+                                <div class="gear">
+                                    <div class="center"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                </div>
+                            </div>
+                            <div class="gear-container small">
+                                <div class="gear">
+                                    <div class="center"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                    <div class="section"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text">
+                        UWE, Bristol, England<br>
+                        Sep 2020 - Aug 2023
+                    </p>
+                </div>
+            </div>
+        </section>
     </div>
 
     <!-- FOOTER -->
@@ -74,6 +193,8 @@
             </div>
             <div class="col about">
                 <a href="about.html">ABOUT ME</a>
+                <a href="about.html#about-overview">Overview</a>
+                <a href="about.html#about-education">Education</a>
             </div>
         </div>
         <div class="footer-logos">

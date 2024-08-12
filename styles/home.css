@@ -161,9 +161,10 @@
         transition: all 250ms linear;
     }
 
-    .home-picture:hover {
+    /* TODO - Scaled up animated gif is shown */
+    /* .home-picture:hover {
         transform: scale(1.1);
-    }
+    } */
 
     .project-link:hover:not(.play) {
         color: var(--project-link-hover-color);
@@ -174,7 +175,7 @@
         display: block;
     }
 
-    .project-link.play:hover{
+    .project-link.play:hover {
         color: var(--project-play-text-hover-color);
         background-color: var(--project-play-background-hover-color);
         transform: scale(1.1);
