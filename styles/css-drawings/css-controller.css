@@ -1,0 +1,117 @@
+:root {
+    --css-controller-size: 100%;
+    --css-controller-back-color: white;
+    --css-controller-color: rgb(255, 255, 255);
+    --css-controller-controls-color: rgb(0, 0, 0);
+}
+
+.css-controller {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--css-controller-size);
+    height: var(--css-controller-size);
+    gap: 32%;
+    overflow: hidden;
+}
+
+.css-controller>*:not(.css-controller .controls) {
+    background-color: var(--css-controller-color);
+}
+
+.css-controller .handle {
+    width: 30%;
+    height: 65%;
+    border-radius: 55% 45% 40% 54% / 35% 15% 40% 35%;
+    rotate: 15deg;
+}
+
+.css-controller .handle.right {
+    transform: rotatey(180deg);
+    rotate: -15deg;
+}
+
+.css-controller .center {
+    position: absolute;
+    top: 0;
+    bottom: 13%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 40%;
+    border-radius: 45% 45% 0 0;
+}
+
+.css-controller .center:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 30%;
+    border-radius: 55%;
+    box-shadow: 0 -10px 0 6px var(--css-controller-color);
+}
+
+.css-controller .controls {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 65%;
+    height: 20%
+}
+
+.css-controller .control {
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+
+.css-controller .pad::before,
+.css-controller .pad::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 33%;
+    background-color: var(--css-controller-controls-color);
+    border-radius: 100vw;
+}
+
+.css-controller .pad::after,
+.css-controller .buttons .col.vertical {
+    rotate: 90deg;
+}
+
+.css-controller .buttons .col {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25%;
+    width: 100%;
+    height: 33%;
+}
+
+.css-controller .button {
+    height: 100%;
+    width: 33%;
+    background-color: var(--css-controller-controls-color);
+    border-radius: 50%;
+}

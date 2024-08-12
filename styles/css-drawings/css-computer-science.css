@@ -1,0 +1,105 @@
+:root {
+    --css-computer-science-size: 100%;
+    --css-computer-science-screen-color: white;
+    --css-computer-science-screen-color: var(--body-color);
+    --css-computer-science-device-color: black;
+    --css-computer-science-device-color: var(--color-light);
+    --css-computer-science-border-thickness: 8px;
+    --css-computer-science-border-color: var(--css-computer-science-device-color);
+}
+
+.css-computer-science {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--css-computer-science-size);
+    height: var(--css-computer-science-size);
+}
+
+.css-computer-science .screen {
+    width: 90%;
+    height: 65%;
+    background-color: var(--css-computer-science-screen-color);
+    border: var(--css-computer-science-border-thickness) solid var(--css-computer-science-border-color);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.css-computer-science .screen .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+}
+
+.css-computer-science .atom {
+    position: relative;
+    width: 60%;
+    height: 85%;
+}
+
+.css-computer-science .atom .center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 7%;
+    height: 8%;
+    border: var(--css-computer-science-border-thickness) solid var(--css-computer-science-border-color);
+    border-radius: 50%;
+}
+
+.css-computer-science .atom .layer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 33%;
+    height: 90%;
+    border: var(--css-computer-science-border-thickness) solid var(--css-computer-science-border-color);
+    border-radius: 50%;
+}
+
+.css-computer-science .atom .layer:nth-child(2) {
+    rotate: 60deg;
+    transform: scaleY(1.1);
+}
+
+.css-computer-science .atom .layer:nth-child(3) {
+    rotate: -60deg;
+    transform: scaleY(1.1);
+}
+
+.css-computer-science .screen .bottom {
+    width: 100%;
+    height: 100%;
+    border-top: var(--css-computer-science-border-thickness) solid var(--css-computer-science-border-color);
+}
+
+.css-computer-science .base {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 20%;
+}
+
+.css-computer-science .base .top {
+    clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%);
+    width: 70%;
+    height: 70%;
+    background: var(--css-computer-science-device-color);
+}
+
+.css-computer-science .base .bottom {
+    width: 90%;
+    height: 15%;
+    border: var(--css-computer-science-border-thickness) solid var(--css-computer-science-border-color);
+    border-radius: 100vw;
+    background-color: var(--css-computer-science-screen-color);
+}

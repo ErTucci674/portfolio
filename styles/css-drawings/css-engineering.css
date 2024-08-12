@@ -1,0 +1,114 @@
+:root {
+    --css-engineering-size: 100%;
+    --css-engineering-back-color: var(--body-color);
+    --css-engineering-gear-color: var(--color-light);
+}
+
+.css-engineering {
+    position: relative;
+    width: var(--css-engineering-size);
+    height: var(--css-engineering-size);
+}
+
+.css-engineering .gear-container {
+    position: absolute;
+}
+
+.css-engineering .gear-container.large {
+    top: 7%;
+    lefT: 7%;
+    width: 45%;
+    height: 45%;
+}
+
+.css-engineering .gear-container.medium {
+    rotate: -10deg;
+    top: 35%;
+    right: 7%;
+    width: 35%;
+    height: 35%;
+}
+
+.css-engineering .gear-container.small {
+    rotate: 5deg;
+    bottom: 8%;
+    left: 25%;
+    width: 30%;
+    height: 30%;
+}
+
+.css-engineering .gear {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--css-engineering-gear-color);
+    border-radius: 50%;
+}
+
+.css-engineering .gear .center {
+    content: '';
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: var(--css-engineering-back-color);
+}
+
+.css-engineering .gear .section {
+    clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%);
+    position: absolute;
+    bottom: 85%;
+    width: 30%;
+    height: 30%;
+    background-color: var(--css-engineering-gear-color);
+    border-radius: 30% 30% 0 0;
+}
+
+.css-engineering .gear .section:nth-child(2) {
+    rotate: 45deg;
+    bottom: 80%;
+    left: 59%;
+    transform: translateX(50%);
+}
+
+.css-engineering .gear .section:nth-child(3) {
+    rotate: 90deg;
+    bottom: 50%;
+    left: 85%;
+    transform: translateX(50%);
+}
+
+.css-engineering .gear .section:nth-child(4) {
+    rotate: 135deg;
+    top: 80%;
+    left: 59%;
+    transform: translateX(-50%);
+}
+
+.css-engineering .gear .section:nth-child(5) {
+    rotate: 180deg;
+    top: 85%;
+}
+
+.css-engineering .gear .section:nth-child(6) {
+    rotate: 225deg;
+    top: 80%;
+    right: 59%;
+    transform: translateX(50%);
+}
+
+.css-engineering .gear .section:nth-child(7) {
+    rotate: 270deg;
+    bottom: 50%;
+    right: 85%;
+    transform: translateX(-50%);
+}
+
+.css-engineering .gear .section:nth-child(8) {
+    rotate: -45deg;
+    bottom: 80%;
+    right: 59%;
+    transform: translateX(-50%);
+}
